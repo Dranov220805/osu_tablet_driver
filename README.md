@@ -9,7 +9,7 @@ Draw in art apps or aim in [osu!](https://osu.ppy.sh/) — your phone or tablet 
 [![Platform](https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white)](https://www.android.com/)
 [![Language](https://img.shields.io/badge/Kotlin-2.2.0-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Min SDK](https://img.shields.io/badge/minSdk-26%20(Android%208.0)-brightgreen)](https://developer.android.com/tools/releases/platforms)
-[![Release](https://img.shields.io/badge/release-v2.0-blue)](#)
+[![Release](https://img.shields.io/badge/release-v0.2-blue)](#)
 [![Protocol](https://img.shields.io/badge/wire%20protocol-v2-orange)](#-wire-protocol)
 
 **Companion PC server → [osu_tablet_server](https://github.com/Dranov220805/osu_tablet_server)**
