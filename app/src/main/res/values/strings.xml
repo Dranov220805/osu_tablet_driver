@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">OsuTablet</string>
+
+    <string name="status_idle">Not connected</string>
+    <string name="status_connecting">Connecting…</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_connected_to">to: %1$s</string>
+    <string name="status_check_server">Check PC server &amp; USB connection.</string>
+
+    <string name="battery_percent">%1$d%%</string>
+
+    <string name="retry_connection">Retry Connection</string>
+    <string name="save_and_exit">Save and Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="apply_dimensions">Apply Dimensions</string>
+    <string name="label_width">Width:</string>
+    <string name="label_height">Height:</string>
+    <string name="unit_mm">mm</string>
+    <string name="hint_width">e.g., 120</string>
+    <string name="hint_height">e.g., 90</string>
+    <string name="app_title">Osu! Tablet</string>
+    <string name="cd_setup">Edit active area</string>
+    <string name="cd_battery">Battery level</string>
+    <string name="cd_logo">App logo</string>
 </resources>

@@ -15,6 +15,7 @@
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/citlali_bground"
+        android:contentDescription="@null"
         android:alpha="0.5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Retry Connection"
+                android:text="@string/retry_connection"
                 android:visibility="gone" />
 
         </LinearLayout>
@@ -101,6 +102,7 @@
             android:id="@+id/app_logo"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:contentDescription="@string/cd_logo"
             app:srcCompat="@drawable/ic_logo" />
 
         <TextView
@@ -109,7 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1"
-            android:text="Osu! Tablet"
+            android:text="@string/app_title"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -127,6 +129,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginEnd="4dp"
+            android:contentDescription="@string/cd_battery"
             app:srcCompat="@drawable/ic_baseline_battery_std_24"
             app:tint="#CCCCCC" />
 
@@ -147,6 +150,7 @@
         android:layout_margin="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/cd_setup"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <LinearLayout
@@ -171,11 +175,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Width:"
+                android:text="@string/label_width"
                 android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/edit_text_width"
+                android:autofillHints="none"
+                android:importantForAutofill="no"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -184,12 +190,12 @@
                 android:inputType="numberDecimal"
                 android:textColor="#FFFFFF"
                 android:backgroundTint="#CCCCCC"
-                android:hint="e.g., 120" />
+                android:hint="@string/hint_width" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mm"
+                android:text="@string/unit_mm"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
@@ -203,11 +209,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Height:"
+                android:text="@string/label_height"
                 android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/edit_text_height"
+                android:autofillHints="none"
+                android:importantForAutofill="no"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -216,12 +224,12 @@
                 android:inputType="numberDecimal"
                 android:textColor="#FFFFFF"
                 android:backgroundTint="#CCCCCC"
-                android:hint="e.g., 90" />
+                android:hint="@string/hint_height" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="mm"
+                android:text="@string/unit_mm"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
 
@@ -230,7 +238,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Apply Dimensions" />
+            android:text="@string/apply_dimensions" />
 
     </LinearLayout>
 
@@ -250,13 +258,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:text="Save and Exit" />
+            android:text="@string/save_and_exit" />
 
         <Button
             android:id="@+id/button_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cancel" />
+            android:text="@string/cancel" />
 
     </LinearLayout>
 
