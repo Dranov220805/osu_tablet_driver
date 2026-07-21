@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Stylus support is used when present but is not a hard requirement. -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="true" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,7 +18,10 @@
         android:theme="@style/Theme.OsuTablet">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="userLandscape"
+            android:resizeableActivity="false"
+            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|keyboardHidden|density">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
